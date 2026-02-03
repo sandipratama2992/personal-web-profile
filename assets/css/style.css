@@ -17,6 +17,19 @@ h1, h2, h3{
     color: #444;
 }
 
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+
 p{
     margin-bottom: 10px;
 }
@@ -45,12 +58,38 @@ header p{
     color: #666;
 }
 
+nav{
+    margin-bottom: 20px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links a{
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links a:hover{
+    color: #3498db;
+}
+
 section{
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 6px;
 }
+
+section:hover{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
 
 article{
     margin-top: 10px;
@@ -109,5 +148,11 @@ footer li{
 
 }
 
+@media (max-width: 600px){
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 
 
